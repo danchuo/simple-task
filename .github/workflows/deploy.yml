@@ -1,17 +1,6 @@
 name: Deploy
 on: push
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Set up JDK
-        uses: actions/setup-java@v3
-        with:
-          java-version: '17'
-          distribution: 'corretto'
-      - name: Run tests
-        run: mvn test
   build:
     runs-on: ubuntu-latest
     steps:
@@ -23,3 +12,8 @@ jobs:
           distribution: 'corretto'
       - name: Build project with maven
         run: mvn -B package --file pom.xml
+      - name: Upload artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: jar-file
+          path: target/stringUnique-0.0.1-SNAPSHOT.jar
