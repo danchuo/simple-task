@@ -17,10 +17,6 @@ jobs:
         with:
           name: jar-file
           path: target/stringUnique-0.0.1-SNAPSHOT.jar
-  build_image:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v3
         with:
