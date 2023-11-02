@@ -8,8 +8,8 @@ import org.springframework.context.annotation.Configuration;
 @SpringBootApplication
 public class StringUniqueApplication {
 
-	public static void main(String... args) {
-		SpringApplication.run(StringUniqueApplication.class, args);
-	}
+    public static void main(String... args) {
+        SpringApplication.run(StringUniqueApplication.class, args);
+    }
 
 }
