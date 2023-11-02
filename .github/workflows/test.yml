@@ -4,7 +4,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Get rep code
       - uses: actions/checkout@v4
       - name: Set up JDK
         uses: actions/setup-java@v3
