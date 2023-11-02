@@ -34,5 +34,6 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
+          context: .
           push: true
           tags: danchuo/string-unique:${{ env.DATE }}
