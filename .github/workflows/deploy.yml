@@ -15,14 +15,6 @@ jobs:
           distribution: 'corretto'
       - name: Build project with maven
         run: mvn -B package --file pom.xml
-      - name: Upload artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: jar-file
-          path: target/stringUnique-0.0.1-SNAPSHOT.jar
-      - uses: actions/download-artifact@v3
-        with:
-          name: jar-file
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
       - name: Set up Docker Buildx
