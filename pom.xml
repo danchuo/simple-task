@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.danchuo</groupId>
     <artifactId>stringUnique</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>stringUnique</name>
     <description>Demo project</description>
     <properties>
